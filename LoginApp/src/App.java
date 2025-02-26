@@ -53,6 +53,26 @@ public class App implements ActionListener {
         passL.setForeground(new Color(239, 243, 248));
         mainFrame.add(passL);
 
+        /// TextField setup
+
+        nameTextField = new JTextField();
+        nameTextField.setSize(500, 500);
+        nameTextField.setBounds(120, 100, 260, 70);
+        nameTextField.setBackground(new Color(83, 94, 104));
+        nameTextField.setForeground(new Color(239, 243, 248));
+        nameTextField.setFont(new Font("Tahoma", Font.PLAIN, 35));
+        nameTextField.setBorder(javax.swing.BorderFactory.createEmptyBorder());
+        mainFrame.add(nameTextField);
+
+        passwordTextField = new JTextField();
+        passwordTextField.setSize(500, 500);
+        passwordTextField.setBounds(120, 180, 260, 70);
+        passwordTextField.setBackground(new Color(83, 94, 104));
+        passwordTextField.setForeground(new Color(239, 243, 248));
+        passwordTextField.setFont(new Font("Tahoma", Font.PLAIN, 35));
+        passwordTextField.setBorder(javax.swing.BorderFactory.createEmptyBorder());
+        mainFrame.add(passwordTextField);
+
         /// Button setup
 
         logInButton = new JButton("Login");
@@ -105,25 +125,7 @@ public class App implements ActionListener {
         re.setBounds(210, 335, 70, 20);
         mainFrame.add(re);
 
-        /// TextField setup
-
-        nameTextField = new JTextField();
-        nameTextField.setSize(500, 500);
-        nameTextField.setBounds(120, 100, 260, 70);
-        nameTextField.setBackground(new Color(83, 94, 104));
-        nameTextField.setForeground(new Color(239, 243, 248));
-        nameTextField.setFont(new Font("Tahoma", Font.PLAIN, 35));
-        nameTextField.setBorder(javax.swing.BorderFactory.createEmptyBorder());
-        mainFrame.add(nameTextField);
-
-        passwordTextField = new JTextField();
-        passwordTextField.setSize(500, 500);
-        passwordTextField.setBounds(120, 180, 260, 70);
-        passwordTextField.setBackground(new Color(83, 94, 104));
-        passwordTextField.setForeground(new Color(239, 243, 248));
-        passwordTextField.setFont(new Font("Tahoma", Font.PLAIN, 35));
-        passwordTextField.setBorder(javax.swing.BorderFactory.createEmptyBorder());
-        mainFrame.add(passwordTextField);
+        
     }
 
     @Override
